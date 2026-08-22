@@ -1,0 +1,11 @@
+name = "playhq-admin"
+main = "worker.js"
+compatibility_date = "2026-08-22"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "playhq-warriors"
+database_id = "1163981c-0d16-4ba3-88d7-c8ab13ad800d"
+
+# PLAYHQ_API_KEY is a secret — do NOT put it here.
+# Set it with: wrangler secret put PLAYHQ_API_KEY
