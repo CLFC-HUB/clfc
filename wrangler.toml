@@ -1,17 +1,11 @@
-name = "cockburn-hub"
-main = "src/worker.js"
-compatibility_date = "2026-08-27"
+name = "playhq-admin"
+main = "worker.js"
+compatibility_date = "2026-08-22"
 
 [[d1_databases]]
 binding = "DB"
 database_name = "playhq-warriors"
 database_id = "1163981c-0d16-4ba3-88d7-c8ab13ad800d"
-migrations_dir = "migrations"
 
-[[r2_buckets]]
-binding = "ASSETS"
-bucket_name = "clfc-assets"
-
-# Required secrets:
-#   wrangler secret put PLAYHQ_API_KEY
-#   wrangler secret put ADMIN_PASSCODE
+# PLAYHQ_API_KEY is a secret — do NOT put it here.
+# Set it with: wrangler secret put PLAYHQ_API_KEY
